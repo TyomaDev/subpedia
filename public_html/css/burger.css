@@ -1,0 +1,91 @@
+#sandwichmenu {
+ text-align: center;
+}
+.tpl_hamburger svg {
+    height: 40px;
+    width: 60px;
+}
+.tpl_hamburger svg {cursor: pointer; 
+    height: 50px;
+    transform: translate3d(0px, 0px, 0px);  
+    width: 80px;}
+svg:not(:root) {
+    overflow: hidden;
+}
+.tpl_hamburger path.top, .tpl_hamburger path.bottom {
+    stroke-dasharray: 240px, 950px;
+}
+.tpl_hamburger path {
+    fill: none;
+    stroke: #800080; 
+    stroke-dashoffset: 0; 
+    stroke-linecap: round; 
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+}
+.tpl_hamburger path.middle {
+    stroke-dasharray: 240px, 240px;
+}
+.tpl_hamburger path {
+    fill: none; 
+    stroke: #800080; 
+    stroke-dashoffset: 0;
+    stroke-linecap: round; 
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+}
+
+.tpl_hamburger.active path.top, .tpl_hamburger.active path.bottom {
+    stroke-dashoffset: -650px;
+}
+.tpl_hamburger path.top, .tpl_hamburger path.bottom {
+    stroke-dasharray: 240px, 950px;
+}
+.tpl_hamburger.active path.middle {
+    stroke-dasharray: 1px, 220px;
+    stroke-dashoffset: -115px;
+}
+.tpl_hamburger{
+    z-index: 9999;
+}
+.js_menu {display: none;}
+.js_menu.active {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    z-index: 9997;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+/* inside js menu */
+.js_menu .links_nav{
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+#alinks_nav{
+    z-index: 99999;
+}
+.js_menu .links_nav a{
+    font-size: 1.7rem;
+    margin-bottom: 7px;
+}
+.js_menu .reg-form_nav{
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.butjsmenu{
+    font-size: 1.5rem;
+    margin-top: 7px;
+}
+.ajsmenu{
+    font-size: 1.7rem;
+
+}

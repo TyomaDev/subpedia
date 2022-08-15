@@ -1,0 +1,144 @@
+/*  */
+
+.sub-articals-blocks div{
+    background-color: rgb(157, 8, 177);
+    width: 450px;
+    height: 300px;
+    margin: 15px;  
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 0.6s;
+    
+}
+.sub-articals-blocks div:hover{
+    background-color: rgb(42, 177, 8);
+    margin: 5px;
+    transition: 0.6s;
+    box-shadow: inset 0 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
+}
+.imgphys{
+    background-image: url(../img/articfons/phis.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgmath{
+    background-image: url(../img/articfons/math.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgbio{
+    background-image: url(../img/articfons/bio.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgchem{
+    background-image: url(../img/articfons/Chem.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub-articals-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.header{
+    padding: 5rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.sub-articals-blocks span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 15px;
+    color: rgb( 234,234,237);;
+    font-size: 28px;
+    font-weight: bold;
+    user-select:none;
+    background-color: rgb(26, 26, 26);
+
+}
+.sub-articals-blocks a{
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+}
+/* nav */
+.nav-container{
+	padding:0;
+	margin:0;
+	
+}
+.nav-row{
+    z-index: 99;
+    /*position: fixed;*/
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 75px;	
+    padding: 0 15px;
+    margin: 0;
+}
+.logo img{
+	width: 100%;
+    padding: 0 15px;
+}
+
+.reg-form_nav{
+	display: flex;
+	align-items: center;
+	
+}
+.reg-form_nav a{
+	color: rgb( 234,234,237);
+}
+.reg-form_nav button{
+	margin-right:15px ;
+	background: none;
+	border: 1 solid rgb( 234,234,237);
+	border-radius: 5px;
+	color: rgb( 234,234,237);
+}
+.links_nav a{
+	margin: auto 10px;
+	color: rgb( 234,234,237);
+}
+.links_nav a:hover{
+	text-decoration: none;
+	color: #007bff;
+}
+.reg-form_nav a:hover{
+	text-decoration: none;
+	color: #007bff;
+}
+
+/* footer */
+footer{
+	text-decoration: none;
+	font-size: 21px;
+	padding: 25px 0;
+	background-color: rgb(26, 26, 26);
+	color: rgb( 234,234,237);
+	user-select:none;
+	text-align: center;
+}
+
+/*media*/
+@media screen and (max-width: 600px) {
+    .reg-form_nav a, .logo {
+	margin:1rem 0;
+}
+
+}
+

@@ -1,0 +1,55 @@
+
+@media screen and (min-width: 991px) {
+	
+.main-profile {
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-Radius: none ;
+    min-height: 400px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+}
+@media screen and (max-width: 991px) {
+
+.main-profile-wrapper{
+    width: 100%;
+}
+.main-profile{
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 5px;
+	flex-wrap: wrap;
+}
+.user_inf-section{
+	background-color: #fff;
+}
+*{
+	font-size: 1.3rem;
+	text-align: center;
+}
+.publications_stat div *{
+	font-size: 1.3rem;
+}
+.user_inf a {
+	height:auto;
+}
+h2{
+	font-size: 2rem;
+	white-space: nowrap;
+}
+.wrapper{
+	padding: 1rem 0;
+}
+.version_inf{
+    position: static;	
+}	
+}

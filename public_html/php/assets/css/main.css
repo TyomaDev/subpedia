@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-family: Montserrat, sans-serif; 
+}
+
+a {
+    color: #7c9ab7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px 0;
+    width:100%;
+}
+
+input {
+	
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #8000ae;
+    outline: none;
+}
+
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+    max-height: 600px;
+}
+
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+.error {
+    border-bottom: 2px solid #ff4332;
+}
+
+.msg {
+    border: 2px solid #ff4332;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.none {
+    display: none;
+}
+
+.logout {
+    color: #b7625c;
+}
+.radio_sub{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/*  */
+.inputForm{
+min-height: 100vh;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+padding: 75px 0;
+width:100%;
+}
+
+/*media*/
+
+@media screen and (min-width: 625px) {
+label{font-size: 1.3rem;}   
+input {font-size: 1.5rem}
+
+}
+@media screen and (max-device-width: 625px) {
+label{font-size: 2.5rem;}   
+input {font-size: 3rem;}
+button{font-size: 3rem;}
+p{font-size: 2.5rem;}
+a{font-size: 2.5rem;}
+.logo img{width:auto;}
+footer{font-size: 2rem;}
+.nav-row {min-height: 175px;}
+
+}
+
+

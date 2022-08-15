@@ -1,0 +1,46 @@
+body{
+  overflow-x: hidden;
+}
+hr{
+    border: 0;
+    display:block;
+    width: 100%;               
+    background-color:#000;
+    height: 1px;
+}
+.info-articals{
+	min-height: 100vh;
+	padding: 1rem 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.info-articals h2{
+  font-size: 3rem;
+}
+.info-articals p{
+ margin: 10px 0;
+ text-align: justify;
+ font-size: 21px;
+}
+.owner-inf{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgb(138, 138, 138);
+}
+
+.main_photo_pic{
+  margin: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+.info-articals h2 {
+    font-size: 2rem;
+}
+
+}
